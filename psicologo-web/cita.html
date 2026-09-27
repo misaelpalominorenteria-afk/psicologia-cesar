@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Solicita una cita de atención psicológica.">
+
+    <title>Agendar cita | Psicólogo César Luis Rentería</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+
+            <img src="img/logo.png"
+                 alt="Logo"
+                 class="logo-img">
+
+            <div class="logo-text">
+                <strong>César Luis</strong>
+                <span>Psicología</span>
+            </div>
+
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <nav class="nav" id="nav">
+
+            <a href="index.html" class="nav-link">
+                Inicio
+            </a>
+
+            <a href="servicios.html" class="nav-link">
+                Servicios
+            </a>
+
+            <a href="consejos.html" class="nav-link">
+                Consejos
+            </a>
+
+            <a href="preguntas.html" class="nav-link">
+                Preguntas frecuentes
+            </a>
+
+            <a href="contacto.html" class="nav-link">
+                Contáctame
+            </a>
+
+            <a href="cita.html" class="nav-button active-button">
+                Agendar una cita
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            SOLICITAR CITA
+        </span>
+
+        <h1>
+            Agenda un espacio para ti
+        </h1>
+
+        <p>
+            Completa el formulario para enviar una solicitud
+            de atención psicológica.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section appointment">
+
+    <div class="container">
+
+        <div class="appointment-box">
+
+
+            <div class="appointment-info">
+
+                <span class="section-label light">
+                    ATENCIÓN PSICOLÓGICA
+                </span>
+
+                <h2>
+                    Da el primer paso.
+                </h2>
+
+                <p>
+                    Completa tus datos y la solicitud será enviada
+                    mediante WhatsApp para coordinar la atención.
+                </p>
+
+                <div class="appointment-features">
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Atención personalizada
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Modalidad presencial o virtual
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Solicitud sencilla
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-shield-heart"></i>
+                        Información tratada con confidencialidad
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="appointment-form"
+                  id="appointmentForm">
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input type="text"
+                               id="nombre"
+                               name="nombre"
+                               required
+                               placeholder="Tu nombre">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="edad">
+                            Edad
+                        </label>
+
+                        <input type="number"
+                               id="edad"
+                               name="edad"
+                               min="1"
+                               max="120"
+                               required
+                               placeholder="Edad">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input type="tel"
+                               id="telefono"
+                               name="telefono"
+                               required
+                               placeholder="Tu teléfono">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="correo">
+                            Correo
+                        </label>
+
+                        <input type="email"
+                               id="correo"
+                               name="correo"
+                               required
+                               placeholder="tucorreo@email.com">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="modalidad">
+                        Modalidad
+                    </label>
+
+                    <select id="modalidad"
+                            name="modalidad"
+                            required>
+
+                        <option value="">
+                            Selecciona una modalidad
+                        </option>
+
+                        <option value="Presencial">
+                            Presencial
+                        </option>
+
+                        <option value="Virtual">
+                            Virtual
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="motivo">
+                        Motivo de consulta
+                    </label>
+
+                    <textarea id="motivo"
+                              name="motivo"
+                              rows="5"
+                              required
+                              placeholder="Escribe brevemente el motivo de tu consulta..."></textarea>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="fecha">
+                            Fecha preferida
+                        </label>
+
+                        <input type="date"
+                               id="fecha"
+                               name="fecha"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="horario">
+                            Horario preferido
+                        </label>
+
+                        <input type="text"
+                               id="horario"
+                               name="horario"
+                               required
+                               placeholder="Ej. 10:00 a.m.">
+
+                    </div>
+
+                </div>
+
+
+                <label class="privacy-check">
+
+                    <input type="checkbox"
+                           required>
+
+                    <span>
+                        Acepto que mis datos sean utilizados
+                        para gestionar mi solicitud de atención.
+                    </span>
+
+                </label>
+
+
+                <button type="submit"
+                        class="btn btn-primary btn-full">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Solicitar cita
+
+                </button>
+
+
+                <small class="form-note">
+
+                    La solicitud no confirma automáticamente
+                    una cita. La disponibilidad deberá ser
+                    coordinada y confirmada posteriormente.
+
+                </small>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="privacy">
+
+    <div class="container">
+
+        <h2>
+            Aviso importante
+        </h2>
+
+        <p>
+            La información proporcionada mediante este formulario
+            se utiliza para gestionar la solicitud de atención.
+        </p>
+
+        <p>
+            La atención psicológica no garantiza resultados específicos
+            y no sustituye los servicios de emergencia.
+        </p>
+
+        <p>
+            Si existe una situación de emergencia o riesgo inmediato,
+            comunícate con los servicios de emergencia correspondientes
+            de tu localidad.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="footer-logo">
+
+                <img src="img/logo.png" alt="Logo">
+
+                <div>
+                    <strong>César Luis Rentería Chafloque</strong>
+                    <span>Atención psicológica</span>
+                </div>
+
+            </div>
+
+            <p>
+                Atención psicológica profesional y personalizada.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Navegación</h3>
+
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="consejos.html">Consejos</a>
+            <a href="preguntas.html">Preguntas frecuentes</a>
+            <a href="contacto.html">Contáctame</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contacto</h3>
+
+            <a href="https://wa.me/51968551100" target="_blank">
+                WhatsApp: +51 968 551 100
+            </a>
+
+            <span>Diego Ferré 167</span>
+            <span>Sábados 9:00 - 18:00 H</span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<a href="https://wa.me/51968551100"
+   target="_blank"
+   class="whatsapp-float">
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Escríbeme</span>
+
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

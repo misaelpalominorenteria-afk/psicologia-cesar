@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendar cita | Psicología César Rentería</title>
+
+    <meta
+        name="description"
+        content="Solicita una cita de atención psicológica con César Luis Rentería Chafloque."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="brand">
+
+            <div class="logo-box">
+                <img src="img/logo.png" alt="Logo del consultorio">
+            </div>
+
+            <div>
+                <span class="brand-name">César Rentería</span>
+                <small>Psicología</small>
+            </div>
+
+        </a>
+
+        <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <a href="index.html">Inicio</a>
+
+            <a href="servicios.html">Servicios</a>
+
+            <a href="consejos.html">Consejos</a>
+
+            <a href="preguntas-frecuentes.html">
+                Preguntas frecuentes
+            </a>
+
+            <a href="agenda.html" class="active">
+                Agendar cita
+            </a>
+
+            <a href="contacto.html">
+                Contáctame
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- ENCABEZADO -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Solicita atención
+        </span>
+
+        <h1>
+            Agenda tu cita
+        </h1>
+
+        <p>
+            Completa el formulario y envía tu solicitud
+            de atención psicológica.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FORMULARIO -->
+
+<section class="section">
+
+    <div class="container appointment-grid">
+
+        <div class="appointment-info">
+
+            <img
+                src="img/consultorio.jpg"
+                alt="Consultorio de atención psicológica"
+                class="rounded-image"
+            >
+
+            <span class="eyebrow">
+                Atención personalizada
+            </span>
+
+            <h2>
+                Solicita una cita de manera sencilla
+            </h2>
+
+            <p>
+                Completa tus datos y selecciona la modalidad,
+                fecha y horario que prefieras.
+            </p>
+
+            <p>
+                Tu solicitud será enviada por WhatsApp para
+                coordinar posteriormente la disponibilidad.
+            </p>
+
+            <div class="notice">
+
+                <strong>Importante:</strong>
+
+                La solicitud no confirma automáticamente
+                una cita. La disponibilidad debe ser
+                coordinada posteriormente.
+
+            </div>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <form id="appointment-form">
+
+                <div class="form-group">
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="edad">
+                            Edad
+                        </label>
+
+                        <input
+                            type="number"
+                            id="edad"
+                            name="edad"
+                            min="1"
+                            max="120"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Tu número"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="modalidad">
+                        Modalidad
+                    </label>
+
+                    <select
+                        id="modalidad"
+                        name="modalidad"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona una modalidad
+                        </option>
+
+                        <option value="Presencial">
+                            Presencial
+                        </option>
+
+                        <option value="Virtual">
+                            Virtual
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="motivo">
+                        Motivo de consulta
+                    </label>
+
+                    <textarea
+                        id="motivo"
+                        name="motivo"
+                        rows="5"
+                        placeholder="Escribe brevemente el motivo de tu consulta"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="fecha">
+                            Fecha preferida
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fecha"
+                            name="fecha"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="hora">
+                            Hora preferida
+                        </label>
+
+                        <input
+                            type="time"
+                            id="hora"
+                            name="hora"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="privacidad"
+                        required
+                    >
+
+                    <label for="privacidad">
+
+                        Acepto enviar estos datos para gestionar
+                        mi solicitud de atención.
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    📅 Solicitar cita
+                </button>
+
+
+                <p class="form-note">
+
+                    Al enviar el formulario se abrirá WhatsApp
+                    con la información proporcionada.
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QR -->
+
+<section class="section section-soft">
+
+    <div class="container qr-section">
+
+        <div>
+
+            <span class="eyebrow">
+                Acceso rápido
+            </span>
+
+            <h2>
+                Agenda tu cita fácilmente
+            </h2>
+
+            <p>
+                También puedes escanear el código QR para
+                comunicarte directamente por WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="qr-box">
+
+           <img src="img/qr-whatsapp.png" alt="Código QR para contactar por WhatsApp">
+        
+
+            <p>
+                Escanea el código con tu celular.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                César Rentería
+            </h3>
+
+            <p>
+                Psicología y bienestar emocional.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contacto
+            </h4>
+
+            <p>
+                WhatsApp: +51 968 551 100
+            </p>
+
+            <p>
+                Diego Ferré 167
+            </p>
+
+            <p>
+                Sábados: 9:00–18:00H
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Navegación
+            </h4>
+
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="consejos.html">Consejos</a>
+            <a href="preguntas-frecuentes.html">
+                Preguntas frecuentes
+            </a>
+            <a href="contacto.html">
+                Contáctame
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span class="current-year"></span>
+            César Rentería.
+        </p>
+
+        <p>
+            Este sitio no sustituye la atención de emergencia.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
